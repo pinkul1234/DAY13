@@ -1,18 +1,18 @@
 public class Uc1 {
   // determines the largest of three Comparable objects
-  public static <T extends Comparable<T>> T maximum(T x, T y, T z) {
-    T max = x; // assume x is initially the largest
+  public static <P extends Comparable<P>> P maximum(P a, P b, P c) {
+    P max = a; // assume a is initially the largest
 
-    if (y.compareTo(max) > 0)
-      max = y; // y is the largest so far
+    if (b.compareTo(max) > 0)
+      max = b; // b is the largest so far
 
-    if (z.compareTo(max) > 0)
-      max = z; // z is the largest
+    if (c.compareTo(max) > 0)
+      max = c; // c is the largest
 
     return max; // returns the largest object
   } // end method maximum
 
-  public static void main(String args[]) {
+  public static void main(String arg[]) {
     System.out.print("Maximum of %d, %d and %d is %d\n\n", 3, 4, 5, maximum(3, 4, 5));
   }
 }
