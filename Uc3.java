@@ -13,7 +13,6 @@ public class Uc3 {
   } // end method maximum
 
   public static void main(String args[]) {
-    System.out.printf("Maximum of %s, %s and %s is %s\n", "pear", "apple", "orange", maximum(
-        "pear", "apple", "orange"));
+    System.out.print("Maximum of %s, %s and %s is %s\n", "pear", "apple", "orange", maximum("pear", "apple", "orange"));
   }
 }
